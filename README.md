@@ -17,7 +17,7 @@ This is a simple Store API built using Express.js. It provides endpoints to mana
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/store-api.git
+    git clone https://github.com/stevembui52/store_API.git
     ```
 2. Navigate to the project directory:
     ```sh
@@ -43,7 +43,7 @@ This is a simple Store API built using Express.js. It provides endpoints to mana
 - `GET /products` - Get all products
 - `GET /products/:id` - Get a single product by ID
 - `POST /products` - Create a new product
-- `PUT /products/:id` - Update a product by ID
+- `PATCH /products/:id` - Update a product by ID
 - `DELETE /products/:id` - Delete a product by ID
 
 ## Example Requests
@@ -68,4 +68,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-For any inquiries, please contact [your email].
+For any inquiries, please contact stevembui52@gmail.com.
