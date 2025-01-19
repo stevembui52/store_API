@@ -1,5 +1,7 @@
 import express from 'express';
 import connect from './db/connect.js';
+import notFound from './middleware/not_found.js';
+import errorHandler from './middleware/error-handler.js';
 
 const app = express();
 
@@ -9,10 +11,13 @@ const MONGO_URI = process.env.MONGO_URI;
 app.use(express.json());
 
 
+
 app.get('/', (req, res) => {
     res.json({msg:'Hello World'});
 })
 
+app.use(notFound);
+app.use(errorHandler);
 
 
 
